@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import tailwindcssAnimate from 'tailwindcss-animate'
+import ta from 'tailwindcss-animate';
 
 export default {
   darkMode: ["class"],
@@ -82,12 +82,47 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translate(0, 0) scale(1)",
+          },
+          "33%": {
+            transform: "translate(50px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-50px, 50px) scale(0.9)",
+          },
+        },
+        "glow": {
+          "0%, 100%": {
+            opacity: "0.3",
+          },
+          "50%": {
+            opacity: "0.5",
+          },
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 20s ease-in-out infinite",
+        "glow": "glow 4s ease-in-out infinite",
+        "fade-in-up": "fade-in-up 0.6s ease-out",
+      },
+      fontFamily: {
+        'serif': ['Libre Baskerville', 'serif'],
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [ta],
 } satisfies Config;

@@ -2,88 +2,184 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 220 25% 8%;
-    --foreground: 210 20% 95%;
+/* src/index.css o el archivo de estilos global */
 
-    --card: 220 20% 10%;
-    --card-foreground: 210 20% 95%;
+/* ---------------------------------------------------- */
+/* 1. Regular font */
+/* ---------------------------------------------------- */
+@font-face {
+	font-family: "Inter Custom";
 
-    --popover: 220 20% 12%;
-    --popover-foreground: 210 20% 95%;
+	src: url("./assets/fonts/Inter-VariableFont_opsz,wght.ttf")
+		format("truetype");
 
-    --primary: 174 100% 43%;
-    --primary-foreground: 220 25% 8%;
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
 
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 210 20% 95%;
+/* ---------------------------------------------------- */
+/* 2. Italic font */
+/* ---------------------------------------------------- */
+@font-face {
+	font-family: "Inter Custom";
 
-    --muted: 220 15% 18%;
-    --muted-foreground: 210 10% 60%;
+	src: url("./assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+		format("truetype");
 
-    --accent: 174 100% 43%;
-    --accent-foreground: 220 25% 8%;
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
 
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 210 20% 95%;
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
 
-    --success: 142 76% 36%;
-    --success-foreground: 210 20% 95%;
+body {
+	font-family: "Inter Custom", sans-serif;
+}
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 174 100% 43%;
+#hyperliquid {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
-    --radius: 0.5rem;
-
-    --chart-1: 174 100% 43%;
-    --chart-2: 142 76% 36%;
-    --chart-3: 0 72% 51%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-  }
-
-  .dark {
-    --background: 220 25% 8%;
-    --foreground: 210 20% 95%;
-
-    --card: 220 20% 10%;
-    --card-foreground: 210 20% 95%;
-
-    --popover: 220 20% 12%;
-    --popover-foreground: 210 20% 95%;
-
-    --primary: 174 100% 43%;
-    --primary-foreground: 220 25% 8%;
-
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 210 20% 95%;
-
-    --muted: 220 15% 18%;
-    --muted-foreground: 210 10% 60%;
-
-    --accent: 174 100% 43%;
-    --accent-foreground: 220 25% 8%;
-
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 210 20% 95%;
-
-    --success: 142 76% 36%;
-    --success-foreground: 210 20% 95%;
-
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 174 100% 43%;
-  }
+h2 span {
+	font-family: "Inter Custom";
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+	:root {
+		--background: 170 30% 8%;
+		--foreground: 180 20% 95%;
 
-  body {
-    @apply bg-background text-foreground;
-  }
+		--card: 170 25% 12%;
+		--card-foreground: 180 20% 95%;
+
+		--popover: 170 25% 12%;
+		--popover-foreground: 180 20% 95%;
+
+		--primary: 174 100% 65%;
+		--primary-foreground: 170 30% 8%;
+		--primary-glow: 174 100% 75%;
+
+		--secondary: 170 20% 15%;
+		--secondary-foreground: 180 20% 95%;
+
+		--muted: 170 20% 18%;
+		--muted-foreground: 180 10% 60%;
+
+		--accent: 174 100% 65%;
+		--accent-foreground: 170 30% 8%;
+
+		--destructive: 0 72% 51%;
+		--destructive-foreground: 180 20% 95%;
+
+		--success: 142 76% 36%;
+		--success-foreground: 180 20% 95%;
+
+		--border: 170 20% 20%;
+		--input: 170 20% 20%;
+		--ring: 174 100% 65%;
+
+		--radius: 1rem;
+
+		--chart-1: 174 100% 65%;
+		--chart-2: 142 76% 36%;
+		--chart-3: 0 72% 51%;
+		--chart-4: 43 74% 66%;
+		--chart-5: 27 87% 67%;
+
+		/* Gradients */
+		--gradient-background: linear-gradient(
+			135deg,
+			hsl(170 40% 10%),
+			hsl(168 35% 8%)
+		);
+		--gradient-glow: radial-gradient(
+			circle at center,
+			hsl(174 100% 65% / 0.15),
+			transparent 70%
+		);
+	}
+
+	.dark {
+		--background: 170 30% 8%;
+		--foreground: 180 20% 95%;
+
+		--card: 170 25% 12%;
+		--card-foreground: 180 20% 95%;
+
+		--popover: 170 25% 12%;
+		--popover-foreground: 180 20% 95%;
+
+		--primary: 174 100% 65%;
+		--primary-foreground: 170 30% 8%;
+		--primary-glow: 174 100% 75%;
+
+		--secondary: 170 20% 15%;
+		--secondary-foreground: 180 20% 95%;
+
+		--muted: 170 20% 18%;
+		--muted-foreground: 180 10% 60%;
+
+		--accent: 174 100% 65%;
+		--accent-foreground: 170 30% 8%;
+
+		--destructive: 0 72% 51%;
+		--destructive-foreground: 180 20% 95%;
+
+		--success: 142 76% 36%;
+		--success-foreground: 180 20% 95%;
+
+		--border: 170 20% 20%;
+		--input: 170 20% 20%;
+		--ring: 174 100% 65%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+		background: linear-gradient(135deg, hsl(170 40% 10%), hsl(168 35% 8%));
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0id2F2ZVBhdGgiIGQ9Ik0wIDUwIEMyMCAzMCwgNDAgNzAsIDYwIDUwIEM4MCAzMCwgMTAwIDcwLCAxMDAgNTAgVjEwMCBIMEBaIiAvPgogIDwvZGVmcz4KICAKICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjAuNSI+CiAgICA8dXNlIGhyZWY9IiN3YXZlUGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgLTIwKSBzY2FsZSgxLjIpIHJvdGF0ZSg1KSIgLz4KICAgIDx1c2UgaHJlZWY9IiN3YXZlUGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgLTEwKSBzY2FsZSgxLjEpIHJvdGFlKC0zKSIgLz4KICAgIDx1c2UgaHJlZj0iI3dhdmVQYXRoIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSBzY2FsZSgxKSByb3RhdGUoMCkiIC8+CiAgICA8dXNlIGhyZWY9IiN3YXZlUGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMTApIHNjYWxlKDAuOSkgcm90YXRlKDMpIiAvPgogICAgPHVzZSBocmVmPSIjd2F2ZVBhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAwLCAyMCkgc2NhbGUoMC44KSByb3RhdGUoLTUpIiAvPgogIDwvZz4KPC9zdmc+"),
+			linear-gradient(135deg, hsl(170 40% 10%), hsl(168 35% 8%)); /* Repite el degradado para que el SVG se superponga */
+
+		background-size: cover; /* Asegura que el fondo cubra toda la página */
+		background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+		min-height: 100vh;
+	}
+
+	@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+}
+
+@layer utilities {
+	@keyframes float {
+		0%,
+		100% {
+			transform: translate(0, 0) scale(1);
+		}
+		33% {
+			transform: translate(50px, -50px) scale(1.1);
+		}
+		66% {
+			transform: translate(-50px, 50px) scale(0.9);
+		}
+	}
+
+	.gradient-text {
+		background: linear-gradient(
+			135deg,
+			hsl(174 100% 85%),
+			hsl(174 100% 65%)
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
 }

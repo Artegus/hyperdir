@@ -1,3 +1,5 @@
+import type { Tags } from "./tag";
+
 export interface Project {
     id: string;
     name: string;
@@ -5,5 +7,5 @@ export interface Project {
     description: string;
     website?: string;
     twitter?: string;
-    tags: string[];
+    tags: Tags[];
 }
