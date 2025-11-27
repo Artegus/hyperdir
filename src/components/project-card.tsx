@@ -16,7 +16,7 @@ const categoryColors = {
 
 export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 	return (
-		<Card className="p-6 hover:border-primary/50 transition-all duration-300 bg-card/40 backdrop-blur-xl border-border/50 group hover:shadow-xl hover:shadow-primary/10">
+		<Card className="flex flex-col h-60 p-6 hover:border-primary/50 transition-all duration-300 bg-card/40 backdrop-blur-xl border-border/50 group hover:shadow-xl hover:shadow-primary/10">
 			<div className="flex items-start justify-between mb-4">
 				<div className="flex-1">
 					<h3 className="text-xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
@@ -50,7 +50,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 				</div>
 			</div>
 
-			<p className="text-muted-foreground mb-4 line-clamp-3">
+			<p className="flex-1 text-muted-foreground mb-4 line-clamp-3">
 				{project.description}
 			</p>
 
