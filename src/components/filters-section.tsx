@@ -34,11 +34,9 @@ export const FilterSection: FC<FiltersSectionProps> = ({ }) => {
                 </SearchBar>
                 <SelectedTags tags={selectedTags} onRemoveTag={toggleTag} />
             </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-                <CategoryFilter
-                    selected={selectedCategory}
-                    onSelect={setSelectedCategory}
-                />
-            </div>
+            <CategoryFilter
+                selected={selectedCategory}
+                onSelect={setSelectedCategory}
+            />
         </div>)
 }
