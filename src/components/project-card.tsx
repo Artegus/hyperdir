@@ -32,9 +32,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 							href={project.website}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="p-2 hover:bg-primary/10 rounded-md transition-colors"
+							className="p-2 hover:bg-primary/10 rounded-md transition-colors group/icon"
 						>
-							<GlobeIcon className="h-4 w-4 text-muted-foreground hover:text-primary" />
+							<GlobeIcon className="h-4 w-4 text-muted-foreground group-hover/icon:text-primary" />
 						</a>
 					)}
 					{project.twitter && (
@@ -42,9 +42,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 							href={project.twitter}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="p-2 hover:bg-primary/10 rounded-md transition-colors"
+							className="p-2 hover:bg-primary/10 rounded-md transition-colors group/icon"
 						>
-							<XLogoIcon className="h-4 w-4 text-muted-foreground hover:text-primary" />
+							<XLogoIcon className="h-4 w-4 text-muted-foreground group-hover/icon:text-primary" />
 						</a>
 					)}
 				</div>
