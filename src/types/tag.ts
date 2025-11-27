@@ -21,5 +21,8 @@ const TAGS = [
 	"Validators",
 	"Security",
 	"Node",
+	'Indexer',
+	'Bridge',
+	'API'
 ] as const;
 export type Tags = (typeof TAGS)[number];
