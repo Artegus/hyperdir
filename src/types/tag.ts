@@ -1,4 +1,4 @@
-const TAGS = [
+export const TAGS = [
 	"DEX",
 	"Perpetuals",
 	"Trading",
@@ -25,4 +25,5 @@ const TAGS = [
 	'Bridge',
 	'API'
 ] as const;
-export type Tags = (typeof TAGS)[number];
+
+export type Tag = (typeof TAGS)[number];

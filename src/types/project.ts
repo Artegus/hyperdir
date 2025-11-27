@@ -1,11 +1,12 @@
-import type { Tags } from "./tag";
-
+import type { Tag } from "./tag";
+export type Category = "hyperliquid" | "hyperevm" | "hypercore";
+export type CategorySearch = Category | 'all'; 
 export interface Project {
     id: string;
     name: string;
-    category: "hyperliquid" | "hyperevm" | "hypercore";
+    category: Category;
     description: string;
     website?: string;
     twitter?: string;
-    tags: Tags[];
+    tags: Tag[];
 }

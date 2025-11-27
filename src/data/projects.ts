@@ -85,15 +85,6 @@ export const projects: Project[] = [
 	},
 	{
 		id: '10',
-		name: 'HyperEVMScan',
-		category: 'hyperevm',
-		description: 'HyperEVM explorer by Etherscan',
-		tags: ['Explorer'],
-		website: 'https://hyperevmscan.io/',
-		twitter: 'https://x.com/etherscan'
-	},
-	{
-		id: '11',
 		name: 'HypurrScan',
 		category: 'hyperevm',
 		description: 'Explorer for Hyperliquid L1',
@@ -102,7 +93,7 @@ export const projects: Project[] = [
 		twitter: 'https://x.com/HypurrScan'
 	},
 	{
-		id: '12',
+		id: '11',
 		name: 'HypeDexer',
 		category: 'hypercore',
 		description: 'HL Indexer API',
@@ -111,7 +102,7 @@ export const projects: Project[] = [
 	},
 
 	{
-		id: '13',
+		id: '12',
 		name: 'Allium (Hyperliquid)',
 		category: 'hypercore',
 		description: 'HL Indexer API. Allium provides comprehensive realtime (datastreams) and historical data for Hyperliquid',
@@ -119,7 +110,7 @@ export const projects: Project[] = [
 		website: 'https://docs.allium.so/historical-data/supported-blockchains/hyperliquid/overview',
 	},
 	{
-		id: '14',
+		id: '13',
 		name: 'hyperliquid-python-sdk',
 		category: 'hyperliquid',
 		description: 'SDK for Hyperliquid API trading with Python.',
@@ -127,7 +118,7 @@ export const projects: Project[] = [
 		website: 'https://github.com/hyperliquid-dex/hyperliquid-python-sdk',
 	},
 	{
-		id: '15',
+		id: '14',
 		name: 'hyperliquid-rust-sdk',
 		category: 'hyperliquid',
 		description: 'SDK for Hyperliquid API trading with Rust.',
@@ -135,7 +126,7 @@ export const projects: Project[] = [
 		website: 'https://github.com/hyperliquid-dex/hyperliquid-rust-sdk',
 	},
 	{
-		id: '16',
+		id: '15',
 		name: 'hyperliquid-ts-sdk',
 		category: 'hyperliquid',
 		description: 'Unofficial Hyperliquid API SDK written in TypeScript',
@@ -143,7 +134,7 @@ export const projects: Project[] = [
 		website: 'https://github.com/nktkas/hyperliquid',
 	},
 	{
-		id: '17',
+		id: '16',
 		name: 'hyperliquid-ts/js-sdk',
 		category: 'hypercore',
 		description: 'Simple and easy way to access the Hyperliquid API using Javascript/Typescript',
@@ -151,7 +142,7 @@ export const projects: Project[] = [
 		website: 'https://github.com/nomeida/hyperliquid',
 	},
 	{
-		id: '18',
+		id: '17',
 		name: 'Unit',
 		category: 'hyperliquid',
 		description: 'Unit is the asset tokenization layer on Hyperliquid, enabling seamless deposits and withdrawals.',
@@ -160,7 +151,7 @@ export const projects: Project[] = [
 		twitter: 'https://x.com/unitxyz'
 	},
 	{
-		id: '19',
+		id: '18',
 		name: 'Alchemy (Hyperevm)',
 		category: 'hyperevm',
 		description: 'The Hyperevm API',
@@ -168,7 +159,7 @@ export const projects: Project[] = [
 		tags: ['API', 'Tools']
 	},
 	{
-		id: '20',
+		id: '19',
 		name: 'Trade XYZ',
 		category: 'hyperliquid',
 		description: "trade[XYZ] is a crypto trading platform that democratizes global financial markets with 24/7 access. It offers equity perpetuals (XYZ perpetuals) to trade stocks anytime, spot crypto with the industry's lowest fees, and leverage on majors with Hyperliquid's deep liquidity.",
@@ -177,7 +168,7 @@ export const projects: Project[] = [
 		tags: ['HIP-3', 'DEX']
 	},
 	{
-		id: '21',
+		id: '20',
 		name: 'Felix',
 		category: 'hyperliquid',
 		description: "Felix Protocol is an on-chain borrowing and lending suite on Hyperliquid L1. It enables anyone to unlock liquidity or earn yield securely, risk-adjusted, and frictionlessly via three core primitives: CDP Market (feUSD) for high-LTV leverage, Vanilla Markets with variable rates to lend/borrow native tokens, and Stability Pools for carry trades and stable yields. Perfect for margin trading, leverage looping, HLP/SP carry, spot trades, and DEX LPing within Hyperliquid.",
@@ -186,7 +177,7 @@ export const projects: Project[] = [
 		tags: ['HIP-3', 'Borrowing', 'Lending', 'Protocol', 'DEX']
 	},
 	{
-		id: '22',
+		id: '21',
 		name: 'Valantis',
 		category: 'hyperliquid',
 		description: 'Valantis Labs is a modular DEX on Hyperliquid that issues stHYPE (liquid-staked HYPE). LPs stake HYPE for stHYPE to earn yield and provide liquidity',
