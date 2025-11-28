@@ -21,7 +21,7 @@ export const SearchBar: FC<SearchBarProps> = ({ searchQuery, onSearchQuery, chil
                 placeholder="Search project by name"
                 value={searchQuery}
                 onChange={(e) => onSearchQuery(e.target.value)}
-                className="pl-14 pr-6 py-6 text-lg bg-card/40 backdrop-blur-xl border-border/50 focus:border-primary rounded-2xl shadow-lg hover:shadow-xl transition-all"
+                className="pl-11 pr-24 h-11 text-sm border-border focus:border-foreground rounded-lg"
             />
             {children}
         </div>

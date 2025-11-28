@@ -23,7 +23,7 @@ export const FilterSection: FC<FiltersSectionProps> = ({ }) => {
 
     return (
         <div className='flex flex-col gap-4 items-center'>
-            <div className='w-3/4 mx-auto'>
+            <div className='w-full sm:w-3/4 mx-auto'>
                 <SearchBar onSearchQuery={setSearchQuery} searchQuery={searchQuery}>
                     <TagFilterPopover
                         allTags={TAGS}

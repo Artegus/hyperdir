@@ -98,7 +98,7 @@ export const projects: Project[] = [
 		category: 'hypercore',
 		description: 'HL Indexer API',
 		tags: ['Tools', 'Indexer'],
-		website: 'https://hypurrscan.io/',
+		website: 'https://www.hypedexer.com/',
 	},
 
 	{

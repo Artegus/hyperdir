@@ -21,38 +21,39 @@ export const TagFilterPopover = ({
             <PopoverTrigger asChild>
                 <Button
                     variant="ghost"
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 h-10 px-4 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 rounded-xl"
+                    size='sm'
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 h-8 px-3 text-xs font-medium hover:bg-accent"
                 >
-                    <TagIcon className="h-4 w-4 mr-2" />
+                    <TagIcon className="h-3 w-3 mr-1.5" />
                     Tags
                     {selectedTags.length > 0 && (
-                        <span className="ml-2 bg-primary text-primary-foreground rounded-full px-2 py-0.5 text-xs font-bold">
+                        <span className="ml-1.5 bg-foreground text-background rounded-full w-4 h-4 text-[10px] font-semibold flex items-center justify-center">
                             {selectedTags.length}
                         </span>
                     )}
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-80 p-4 bg-card/95 backdrop-blur-xl border-border/50" align="end">
+            <PopoverContent className="w-72 p-3" align="end">
                 <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                        <h4 className="font-semibold text-sm text-foreground">Filter by tags</h4>
+                        <h4 className="text-xs font-medium text-foreground">Filter by tags</h4>
                         {selectedTags.length > 0 && (
                             <button
-                                onClick={onClearTags}
-                                className="text-xs text-muted-foreground hover:text-primary transition-colors"
+                                onClick={() => onClearTags()}
+                                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                Clear all
+                                Clear
                             </button>
                         )}
                     </div>
-                    <div className="flex flex-wrap gap-2 max-h-60 overflow-y-auto">
+                    <div className="flex flex-wrap gap-1.5 max-h-60 overflow-y-auto">
                         {allTags.map((tag) => (
                             <button
                                 key={tag}
                                 onClick={() => onToggleTag(tag)}
-                                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${selectedTags.includes(tag)
-                                    ? "bg-primary text-primary-foreground shadow-md"
-                                    : "bg-card/50 border border-border/50 text-muted-foreground hover:bg-primary/10 hover:border-primary/30"
+                                className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${selectedTags.includes(tag)
+                                        ? "bg-foreground text-background"
+                                        : "bg-accent text-foreground hover:bg-muted"
                                     }`}
                             >
                                 {tag}

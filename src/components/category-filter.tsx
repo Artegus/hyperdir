@@ -8,7 +8,7 @@ type CategoryFilterProps = {
 }
 
 const categories: { id: CategorySearch, label: string }[] = [
-    { id: "all", label: "All Projects" },
+    { id: "all", label: "All" },
     { id: "hyperliquid", label: "Hyperliquid" },
     { id: "hyperevm", label: "HyperEVM" },
     { id: "hypercore", label: "HyperCore" },
@@ -24,13 +24,13 @@ export const CategoryFilter: FC<CategoryFilterProps> = ({
             type="single"
             value={selected}
             onValueChange={(value) => value && onSelect(value as CategorySearch)}
-            className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-full p-1 shadow-lg"
+            className="sm:inline-flex border border-border rounded-lg p-0.5 bg-background"
         >
             {categories.map((category) => (
                 <ToggleGroupItem
                     key={category.id}
                     value={category.id}
-                    className="rounded-full px-6 py-2 text-sm font-medium data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:shadow-md transition-all"
+                    className="rounded-md px-4 py-1.5 text-xs font-medium data-[state=on]:bg-accent transition-all"
                 >
                     {category.label}
                 </ToggleGroupItem>

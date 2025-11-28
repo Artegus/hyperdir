@@ -5,11 +5,13 @@ type AppFooterProps = {
 }
 
 export const AppFooter: FC<AppFooterProps> = ({ }) => {
-    return <footer className="border-t border-border/50 bg-card/20 backdrop-blur-xl mt-20 w-full">
-        <div className="container mx-auto px-4 py-4">
-            <div className="text-center text-muted-foreground">
-                <p>Hyperliquid Ecosystem Directory</p>
+    return (
+        <footer className="border-t border-border mt-32">
+            <div className="container mx-auto px-6 py-8">
+                <div className="text-center">
+                    <p className="text-xs text-muted-foreground">2025 Hyperliquid Ecosystem</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    )
 }

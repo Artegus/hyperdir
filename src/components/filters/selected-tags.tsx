@@ -10,16 +10,16 @@ export const SelectedTags = ({ tags, onRemoveTag }: SelectedTagsProps) => {
     if (tags.length === 0) return null;
 
     return (
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
                 <span
                     key={tag}
-                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs bg-primary/20 text-primary border border-primary/30"
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-accent text-foreground"
                 >
                     {tag}
                     <button
                         onClick={() => onRemoveTag(tag)}
-                        className="hover:bg-primary/30 rounded-full p-0.5 transition-colors"
+                        className="hover:bg-muted rounded p-0.5 transition-colors"
                     >
                         <XIcon className="h-3 w-3" />
                     </button>
