@@ -15,8 +15,7 @@ export const DashboardHeader: FC = ({ }) => {
                     className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up"
                     style={{ animationDelay: "0.1s" }}
                 >
-                    Discover and explore projects building on
-                    Hyperliquid, HyperEVM, and HyperCore
+                    Projects building on Hyperliquid, HyperEVM, and HyperCore
                 </p>
                 <FilterSection />
             </div>
