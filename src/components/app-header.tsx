@@ -1,6 +1,5 @@
 import type { FC } from 'react'
 import { NavLink } from 'react-router'
-import { HlSymbolDarkGreen } from './icons/hl-symbol-dark-green'
 import { HlSymbolLightGreen } from './icons/hl-symbol-light-green'
 
 type AppHeaderProps = {

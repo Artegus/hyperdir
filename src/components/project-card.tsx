@@ -1,17 +1,10 @@
 import type { FC } from "react";
 import type { Project } from "../types/project";
 import { Card } from "./ui/card";
-import { Badge } from "./ui/badge";
 import { GlobeIcon, XLogoIcon } from "@phosphor-icons/react";
 
 type ProjectCardProps = {
 	project: Project;
-};
-
-const categoryColors = {
-	hyperliquid: "bg-primary/10 text-primary border-primary/20",
-	hyperevm: "bg-success/10 text-success border-success/20",
-	hypercore: "bg-chart-4/10 text-chart-4 border-chart-4/20",
 };
 
 export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
