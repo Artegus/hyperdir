@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
-import { useProjectFilter } from "../hooks/useProjectFilters";
 import { ProjectFilterContext } from "./project-filter-context";
+import { useProjectFilter } from "../hooks/useProjectFilters";
 
 export const ProjectFilterProvider = ({ children }: PropsWithChildren) => {
     const filter = useProjectFilter();

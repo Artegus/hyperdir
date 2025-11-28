@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import type { CategorySearch } from '../types/project';
-import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
+import { ToggleGroup, ToggleGroupItem } from '../../../components/ui/toggle-group';
 
 type CategoryFilterProps = {
     selected: CategorySearch;

@@ -3,8 +3,8 @@ import { useProjectFilterContext } from '../hooks/useProjectFilerContext';
 import { SearchBar } from './search-bar';
 import { TagFilterPopover } from './filters/tag-filter-popover';
 import { TAGS } from '../types/tag';
-import { CategoryFilter } from './category-filter';
 import { SelectedTags } from './filters/selected-tags';
+import { CategoryFilter } from './category-filter';
 
 type FiltersSectionProps = {
 

@@ -1,6 +1,6 @@
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
 import type { FC, PropsWithChildren } from 'react'
-import { Input } from './ui/input'
+import { Input } from '../../../components/ui/input'
 
 type SearchBarProps = {
     searchQuery: string;

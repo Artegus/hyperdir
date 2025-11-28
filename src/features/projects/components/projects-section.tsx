@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { useProjectFilterContext } from '../hooks/useProjectFilerContext';
-import { ProjectCard } from './project-card';
+import { ProjectCard } from '../components/project-card';
 
 type ProjectsSectionProps = {
 

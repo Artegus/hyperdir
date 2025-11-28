@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { projects } from "@/data/projects";
+import { projects } from "@/features/projects/data/projects";
 import type { Category } from "../types/project";
 import { type Tag } from "../types/tag";
 

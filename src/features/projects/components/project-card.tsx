@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import type { Project } from "../types/project";
-import { Card } from "./ui/card";
+import { Card } from "../../../components/ui/card";
 import { GlobeIcon, XLogoIcon } from "@phosphor-icons/react";
 
 type ProjectCardProps = {
