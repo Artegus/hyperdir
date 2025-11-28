@@ -183,5 +183,14 @@ export const projects: Project[] = [
 		description: 'Valantis Labs is a modular DEX on Hyperliquid that issues stHYPE (liquid-staked HYPE). LPs stake HYPE for stHYPE to earn yield and provide liquidity',
 		website: 'https://app.valantis.xyz/vaults',
 		tags: ['DEX', 'Vaults']
+	},
+	{
+		id: '22',
+		name: 'HyBridge',
+		category: 'hyperliquid',
+		description: '',
+		website: 'https://hybridge.xyz/',
+		twitter: 'https://x.com/HyBridgeHL',
+		tags: ['Bridge', 'Core', 'Stake']
 	}
 ];

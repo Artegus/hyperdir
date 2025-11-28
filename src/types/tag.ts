@@ -19,7 +19,8 @@ export const TAGS = [
 	"Spot Trading",
 	'Indexer',
 	'Bridge',
-	'API'
+	'API',
+	'Stake'
 ] as const;
 
 export type Tag = (typeof TAGS)[number];
